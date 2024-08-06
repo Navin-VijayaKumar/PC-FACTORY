@@ -1,0 +1,48 @@
+/* src/Components/Items/Items.css */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item {
+    width: 350px;
+    margin: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+}
+
+.item p {
+    margin: 10px 20px;
+    font-size: 16px;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.price-new {
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.price-old {
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: line-through;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
