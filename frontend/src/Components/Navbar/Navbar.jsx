@@ -10,11 +10,11 @@ export const Navbar = () => {
   return (
     <div className='Navbar'>
       <ul className='Navbar-items'>
-      <li onClick={() => setItems("shop")}><Link style={{textDecoration: 'none'}} to='/'>Shop</Link>{items === "shop" ? <hr /> : null}</li>
-        <li onClick={() => setItems("Pre Build")}><Link  style={{textDecoration: 'none'}} to='/Pre Build'>Pre Build</Link>{items === "Pre Build" ? <hr /> : null}</li>
+      <li onClick={() => setItems("shop")}><Link style={{textDecoration: 'none'}} to='/'>Return</Link>{items === "shop" ? <hr /> : null}</li>
+        <li onClick={() => setItems("PreBuild")}><Link  style={{textDecoration: 'none'}} to='/PreBuild'>Pre Build</Link>{items === "Pre Build" ? <hr /> : null}</li>
         <li onClick={() => setItems("CPU")}><Link  style={{textDecoration: 'none'}} to='/CPU'>CPU</Link>{items === "CPU" ? <hr /> : null}</li>
         <li onClick={() => setItems("GPU")}><Link  style={{textDecoration: 'none'}} to='/GPU'>GPU</Link>{items === "GPU" ? <hr /> : null}</li>
-        <li onClick={() => setItems("Mother Board")}><Link  style={{textDecoration: 'none'}} to='/Mother Board'>Mother Board</Link>{items === "Mother Board" ? <hr /> : null}</li>
+        <li onClick={() => setItems("MotherBoard")}><Link  style={{textDecoration: 'none'}} to='/MotherBoard'>Mother Board</Link>{items === "Mother Board" ? <hr /> : null}</li>
         <li onClick={() => setItems("Ram")}><Link style={{textDecoration: 'none'}}  to='/Ram'>Ram</Link>{items === "Ram" ? <hr /> : null}</li>
         <li onClick={() => setItems("Storage")}><Link  style={{textDecoration: 'none'}} to='/Storage'>Storage</Link>{items === "Storage" ? <hr /> : null}</li>
         <li onClick={() => setItems("SMPS")}><Link  style={{textDecoration: 'none'}} to='/SMPS'>SMPS</Link>{items === "SMPS" ? <hr /> : null}</li>
