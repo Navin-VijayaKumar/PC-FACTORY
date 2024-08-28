@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { Navbar } from './Components/Navbar/Navbar'; // Ensure this is defined
+import { Navbar } from './Components/Navbar/Navbar'; 
 import { Routes, Route } from 'react-router-dom';
 import { Shopcat } from './Pages/Shopcat';
 import { Product } from './Pages/Product'; // Ensure this is defined
