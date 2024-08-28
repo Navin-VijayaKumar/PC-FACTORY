@@ -5,7 +5,7 @@ import up from '../Assets/up.png';
 const AddProduct = () => {
   const [productDetails, setProductDetails] = useState({
     name: "",
-    image: null, // Initialize image as null
+    image: null,
     category: "cpu",
     new_price: "",
     old_price: "",
