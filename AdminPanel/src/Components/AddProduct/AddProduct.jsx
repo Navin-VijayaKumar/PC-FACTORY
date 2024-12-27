@@ -122,10 +122,12 @@ const AddProduct = () => {
             hidden
           />
         </div>
-
+<div className='admin button'>
         <button onClick={Add_Product} className="addproduct-button">
           Add
         </button>
+
+</div>
       </div>
     </div>
   );

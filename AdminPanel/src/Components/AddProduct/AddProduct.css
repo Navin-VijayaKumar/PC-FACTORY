@@ -1,3 +1,8 @@
+addproduct{
+margin: 0;
+padding: 0;
+
+}
 .addproduct {
     box-sizing: border-box;
     width: 100%;
@@ -58,6 +63,8 @@
 }
 
 .addproduct-button {
+  
+    
     margin-top: 20px;
     width: 160px;
     height: 60px;
@@ -68,9 +75,10 @@
     cursor: pointer;
     font-size: 25px;
     font-weight: 500;
+    margin-left: 160px;
 }
 
 .addproduct-button:hover {
     background-color: aqua;
-    color: rgb(31, 0, 141);
+    color: rgb(0, 0, 0);
 }

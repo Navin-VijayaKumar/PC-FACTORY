@@ -83,13 +83,13 @@
 
 }
 .display-right-button{
-
+ margin-top: 30px;
     padding: 20px 40px;
     width: 200px;
     font-size: 20px;
     font-weight: 600;
     color: black;
-    background-color: yellow;
+    background-color: rgb(255, 255, 0);
     margin-bottom: 40px;
     border: black;
     outline: none;
@@ -98,5 +98,5 @@
 
 }
 .display-right-button:hover{
-    background-color: rgb(215, 215, 64);
+    background-color: rgb(161, 162, 57);
 }

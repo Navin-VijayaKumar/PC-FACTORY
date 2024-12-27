@@ -143,7 +143,7 @@ const CartItems = () => {
               <label>Description</label>
               <textarea name="description" value={formData.description} onChange={handleInputChange} rows="4" placeholder='Enter any additional details' required />
 
-              <button type="submit">Submit</button>
+              <button type="submit">BUY</button>
             </form>
           </div>
         </div>

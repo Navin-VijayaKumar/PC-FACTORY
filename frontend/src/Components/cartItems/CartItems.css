@@ -147,8 +147,9 @@
   .modal-content {
     background-color: #fefefe;
     padding: 20px;
+    height: 700px;
     border-radius: 8px;
-    width: 400px;
+    width: 600px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   }
   
@@ -168,12 +169,18 @@
   
   h2, h3 {
     margin: 0 0 10px;
-    color: #333;
+    color: #000000;
   }
   
   form {
     display: flex;
     flex-direction: column;
+  }
+  h2{
+    display: flex;
+    justify-content: center;
+    font-weight: 600; 
+    color: rgb(0, 27, 233);
   }
   
   form label {
@@ -192,16 +199,30 @@
   
   form button {
     padding: 10px;
-    background-color: #28a745;
+    margin-left: 70px;
+    background-color: #ff0000;
     color: white;
+    align-items: center;
+    justify-content: center;
     border: none;
+    width: 400px;
+    display: flex;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: transform 0.4s;
+    border-radius: 6px;
+    border: 1px solid black;
+    margin-top: 30px;
+
   }
   
   form button:hover {
-    background-color: #218838;
+    background-color: #40ff00;
+    color: black;
+    transform: scale(1.05);
+    font-size: 18px;
   }
   
   .modal p {
