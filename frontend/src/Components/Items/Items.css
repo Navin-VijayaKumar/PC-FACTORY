@@ -6,22 +6,27 @@
 }
 
 .item {
-    width: 350px;
+    width: 380px;
+    height: 500px;
     margin: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     overflow: hidden;
-    transition: transform 0.3s;
+    transition: transform 0.4s;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+
 }
 
 .item img {
-    width: 100%;
-    height: auto;
+   width: 380px;
+   height: 350px;
+   object-fit: cover;
 }
 
 .item p {
     margin: 10px 20px;
-    font-size: 16px;
+    font-size: 19px;
 }
 
 .price {
@@ -32,17 +37,18 @@
 
 .price-new {
     color: #000;
-    font-size: 18px;
+    font-size: 21px;
     font-weight: 600;
 }
 
 .price-old {
     color: #000;
-    font-size: 16px;
+    font-size: 19px;
     font-weight: 500;
     text-decoration: line-through;
 }
 
 .item:hover {
     transform: scale(1.05);
+    box-shadow:4px 4px 30px rgb(169, 163, 163);;
 }

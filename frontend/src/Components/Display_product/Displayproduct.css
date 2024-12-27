@@ -13,15 +13,18 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+    object-fit: cover;
 
 }
 .display-product-img-list img{
     height: 163px;
+    object-fit: cover;
 
 }
 .display-product-main-img{
     width: 550px;
     height: 650px;
+    object-fit: cover;
 
 }
 .display-product-right{
