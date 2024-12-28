@@ -59,6 +59,7 @@ const AddProduct = () => {
     <div className="addproduct">
       <div className="addproduct-items">
         <div className="addproduct-field">
+          <h1>ADD PRODUCT</h1>
           <p>Product Title</p>
           <input
             value={productDetails.name}
@@ -110,7 +111,8 @@ const AddProduct = () => {
           </select>
         </div>
 
-        <div className="addproduct-field addproduct-image">
+        <div className="addproduct-field-addproduct-image">
+          <p>Upload Image</p>
           <label htmlFor="file-input">
             <img src={up} className="imaged" alt="upload" />
           </label>
@@ -124,7 +126,7 @@ const AddProduct = () => {
         </div>
 <div className='admin button'>
         <button onClick={Add_Product} className="addproduct-button">
-          Add
+          ADD
         </button>
 
 </div>

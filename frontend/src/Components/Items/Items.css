@@ -1,8 +1,9 @@
 /* src/Components/Items/Items.css */
 .container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
 }
 
 .item {
@@ -27,7 +28,7 @@
 .item p {
     margin: 10px 20px;
     font-size: 20px;
-font-family: 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .price {
