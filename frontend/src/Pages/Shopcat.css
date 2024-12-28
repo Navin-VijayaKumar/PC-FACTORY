@@ -5,9 +5,22 @@
 
 }
 .Shopcat-disp-product{
-    margin:20px 170px;
     display: flex;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    row-gap: 80px;
+    align-items: center;
+   flex-wrap:wrap;
+    justify-content: center;
+  
     
 }
+@media only screen and (max-width: 600px) {
+    .Shopcat-disp-product{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      padding-left: 160px;
+        
+    }
+    
+    
+  }

@@ -1,26 +1,20 @@
-/* src/Components/Items/Items.css */
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-}
 
 .item {
+
     width: 380px;
-    height: 500px;
+    height: 530px;
     margin: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    overflow: hidden;
     transition: transform 0.4s;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(234, 226, 226);
     border: 1px solid black;
 
 }
 
 .item img {
-   width: 380px;
+   width: 378px;
+   padding-top: 0.2px;
    height: 350px;
    object-fit: cover;
 }
@@ -34,7 +28,7 @@
 .price {
     display: flex;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 20px 20px;
 }
 
 .price-new {
