@@ -186,6 +186,7 @@
   form label {
     margin: 10px 0 5px;
     font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
   }
   
   form input,
@@ -197,7 +198,7 @@
     width: 100%;
   }
   
-  form button {
+  .submit-btn{
     padding: 10px;
     margin-left: 70px;
     background-color: #ff0000;
@@ -218,8 +219,8 @@
 
   }
   
-  form button:hover {
-    background-color: #40ff00;
+  .submit-btn:hover {
+    background-color: #ffbcbc;
     color: black;
     transform: scale(1.05);
     font-size: 18px;

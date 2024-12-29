@@ -1,4 +1,8 @@
-
+a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
 .item {
 
     width: 380px;
@@ -9,9 +13,11 @@
     transition: transform 0.4s;
     background-color: rgb(234, 226, 226);
     border: 1px solid black;
+    
 
 }
 
+  
 .item img {
    width: 378px;
    padding-top: 0.2px;
@@ -23,6 +29,7 @@
     margin: 10px 20px;
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
+    
 }
 
 .price {

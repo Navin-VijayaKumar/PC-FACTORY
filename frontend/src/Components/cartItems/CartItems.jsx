@@ -20,7 +20,9 @@ const CartItems = () => {
       [e.target.name]: e.target.value
     });
   };
+const PayNow=()=>{
 
+}
   const handleCheckout = async (event) => {
     event.preventDefault();
 
@@ -139,11 +141,12 @@ const CartItems = () => {
 
               <label>Contact Number</label>
               <input type="text" name="contact" value={formData.contact} onChange={handleInputChange} placeholder='Enter your contact number' required />
-
+              <label>Pay Now</label>
+              <button className='pay-now' onClick={() =>PayNow()}>pay</button>
               <label>Description</label>
               <textarea name="description" value={formData.description} onChange={handleInputChange} rows="4" placeholder='Enter any additional details' required />
 
-              <button type="submit">BUY</button>
+              <button className='submit-btn' type="submit">BUY</button>
             </form>
           </div>
         </div>

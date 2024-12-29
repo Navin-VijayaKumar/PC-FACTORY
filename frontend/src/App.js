@@ -8,7 +8,7 @@ import { Cart } from './Pages/Cart'; // Ensure this is defined
 import { Shop } from './Pages/Shop';
 import Home from './Pages/Home'; // Import Home component
 import cpu_banner from './Components/Assets/bannercpu.jpg';
-import gpu_banner from './Components/Assets/bannergpu1.jpg';
+import gpu_banner from './Components/Assets/bannergpu1.webp';
 
 function App() {
     return (
