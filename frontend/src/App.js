@@ -9,6 +9,7 @@ import { Shop } from './Pages/Shop';
 import Home from './Pages/Home'; // Import Home component
 import cpu_banner from './Components/Assets/bannercpu.jpg';
 import gpu_banner from './Components/Assets/bannergpu1.webp';
+import { Desbox } from './Components/Desbox/Desbox';
 
 function App() {
     return (

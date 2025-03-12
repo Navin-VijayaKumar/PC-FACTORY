@@ -1,65 +1,33 @@
-import PropTypes from 'prop-types';
-import React, { Component, createRef } from 'react';
+import React, { Component } from 'react';
 import './Home.css';
-import * as THREE from 'three';
-import NET from 'vanta/dist/vanta.net.min';
-import gif1 from './Assets/gif1.webp'
-import np1 from './Assets/np1.webp'
+import pc from './Assets/pc.png';
+import gif1 from './Assets/gif1.webp';
+import np1 from './Assets/np1.webp';
+
 export class Home extends Component {
-  static propTypes = {}
-
-  vantaEffect = null;
-  vantaRef = createRef();
-
-  componentDidMount() {
-    this.vantaEffect = NET({
-      el: this.vantaRef.current,
-      THREE,
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: false,
-      // minHeight: 200.00,
-      // minWidth: 200.00,
-      // scale: 1.00,
-      // scaleMobile: 1.00,
-      // points: 7.00,
-      // maxDistance: 25.00,
-      // spacing: 20.00,
-      // showDots: false
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: false,
-      minHeight: 200.00,
-      minWidth: 200.00,
-      scale: 1.00,
-     
-      scaleMobile: 1.00
-
-    });
-  }
-
-  componentWillUnmount() {
-    if (this.vantaEffect) this.vantaEffect.destroy();
-  }
-
   render() {
     return (
       <div>
-        <div ref={this.vantaRef} className="vanta-background">
-          <nav>
-            <div className="nav-link">
-              <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="/shop">BUILD NOW</a></li>
-                <li><a href="">ABOUT US</a></li>
-                <li><a href="">CONTACT</a></li>
-              </ul>
+        {/* Background Section */}
+        <div className="vanta-background">
+          {/* Navbar */}
+          <nav className="navbar">
+            <div className="logo">
+              <img src={pc} className="pclogo" alt="PC Logo" />
+              <h2>PC Factory</h2>
             </div>
+            <ul className="nav-links">
+              <li><a href="/">Home</a></li>
+              <li><a href="/shop">Build Now</a></li>
+              <li><a href="/about">About Us</a></li>
+              <li><a href="/contact">Contact</a></li>
+            </ul>
           </nav>
         </div>
-        <div className="homeProduct">
 
-        <h1>New Product</h1>
+        {/* New Product Section */}
+        <div className="homeProduct">
+          <h1>New Product</h1>
         </div>
         <div className="newProductimg">
           <div></div>
@@ -67,16 +35,16 @@ export class Home extends Component {
           <div></div>
           <div></div>
         </div>
- 
+
+        {/* Top Selling Section */}
         <div className="topselling">
           <h1>Top Selling</h1>
         </div>
         <div className="topselling-product">
-          <img src={gif1} alt="" />
-          <img src={np1} alt="" />
-
+          <img src={gif1} alt="Top Selling Product 1" />
+          <img src={np1} alt="Top Selling Product 2" />
         </div>
-             </div>
+      </div>
     );
   }
 }

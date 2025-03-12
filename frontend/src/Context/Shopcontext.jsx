@@ -15,7 +15,7 @@ const ShopcontextProvider = (props) => {
     const [cartItems, setCartItems] = useState(getDefaultCart());
     const [all_product,setAll_Product]= useState([]);
     useEffect(()=>{
-        fetch('http://localhost:4000/allproducts')
+        fetch('https://pc-factory-backend.onrender.com/allproducts')
         .then((Response)=>Response.json())
         .then((data)=>setAll_Product(data))
 

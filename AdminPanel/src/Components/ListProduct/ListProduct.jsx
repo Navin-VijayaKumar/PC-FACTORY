@@ -5,7 +5,7 @@ import delete1 from './Assets/delete1.png';
 const ListProduct = () => {
   const [allproducts,setAllproducts]=useState([]);
   const fetchInfo= async ()=> {
-    await fetch('http://localhost:4000/allproducts')
+    await fetch('https://pc-factory-backend.onrender.com/allproducts')
     .then((res)=>res.json())
     .then((data)=>{setAllproducts(data)});
    
@@ -14,7 +14,7 @@ const ListProduct = () => {
     fetchInfo();
   },[])
   const remove_Product=async(id)=>{
-    await fetch('http://localhost:4000/removeproduct',{
+    await fetch('https://pc-factory-backend.onrender.com/removeproduct',{
       method:'POST',
       headers:{
         Accept:'application/json',

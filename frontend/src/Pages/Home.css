@@ -9,63 +9,58 @@
   width: 100%;
   position: relative;
   overflow: hidden;
-  background-color: 0x27142;
-  color:aqua;
-  
-
 }
 
-nav {
+/* Navbar */
+.navbar {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1rem;
-  z-index: 10; /* Ensure the nav is above the Vanta effect */
-}
-
-.nav-link {
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for nav */
-  padding: 0.5rem;
-  border-radius: 5px;
-}
-
-.nav-link ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  z-index: 10;
   display: flex;
-  justify-content: right;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 50px;
+  background: rgba(72, 69, 69, 0.6); /* Semi-transparent */
 }
 
-.nav-link li {
-  margin: 0 1rem;
+.logo img {
+  width: 70px;
+  height: 70px;
+}
+.logo 
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.logo h2{
+  color: rgb(0, 0, 0);
+  font-family: monospace;
+  font-size: 22px;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 50px;
 }
 
-.nav-link a {
-  color: #fff; /* White text */
+.nav-links li {
+  display: inline-block;
+}
+
+.nav-links a {
+  color: aqua;
+  font-size: 26px;
+  font-family: monospace;
   text-decoration: none;
-  font-size: 1.2rem;
+  transition: color 0.3s ease-in-out;
 }
 
-.nav-link ul li a {
-  color: rgb(252, 255, 255);
-  text-decoration: none;
-  font-size: 19px;
-}
-
-.nav-link ul li::after {
-  content: '';
-  width: 0%;
-  height: 2px;
-  background: rgb(252, 252, 252);
-  display: block;
-  margin: auto;
-  transition: 0.5s;
-}
-
-.nav-link ul li:hover::after {
-  width: 100%;
+.nav-links a:hover {
+  color: white;
 }
 
 .homeProduct {
