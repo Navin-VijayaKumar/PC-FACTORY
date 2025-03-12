@@ -26,20 +26,31 @@ app.get("/",(req,res)=>{
 const storage = multer.diskStorage({
     destination: './upload/images',
     filename: (req, file, cb) => {
-        return cb(null, `${file.fieldname}_${Date.now()}${path.extname(file.originalname)}`);
+        return cb(null, `product_${Date.now()}${path.extname(file.originalname)}`);
     }
 });
 
-const upload =multer({storage:storage})
-//end point
-app.use("/images",express.static('upload/images'))
+const upload = multer({ storage: storage });
+
+// Serve images correctly
+app.use("/images", express.static(path.join(__dirname, 'upload/images')));
 
 app.post("/upload", upload.single('product'), (req, res) => {
+    if (!req.file) {
+        return res.status(400).json({ success: 0, message: "Image upload failed" });
+    }
+
+    // Use the correct base URL for production
+    const baseURL = process.env.NODE_ENV === "production"
+        ? "https://pc-factory-backend.onrender.com"
+        : "https://pc-factory-backend.onrender.com";
+
     res.json({
         success: 1,
-        image_url: `https://pc-factory-backend.onrender.com/images/${req.file.filename}`
+        image_url: `${baseURL}/images/${req.file.filename}`
     });
 });
+
 //schema
  const Product=mongoose.model("Product",{
     id:{

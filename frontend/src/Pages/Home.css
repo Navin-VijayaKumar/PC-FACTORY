@@ -22,7 +22,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 15px 50px;
-  background: rgba(72, 69, 69, 0.6); /* Semi-transparent */
+  background: rgba(104, 101, 101, 0.6); /* Semi-transparent */
 }
 
 .logo img {
@@ -111,6 +111,7 @@
   gap: 1rem;
   height: 300px;
   width: 95%;
+  margin-bottom: 90px;
 }
 
 .newProductimg > div {

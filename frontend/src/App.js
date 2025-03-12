@@ -5,7 +5,7 @@ import { Routes, Route } from 'react-router-dom';
 import { Shopcat } from './Pages/Shopcat';
 import { Product } from './Pages/Product'; // Ensure this is defined
 import { Cart } from './Pages/Cart'; // Ensure this is defined
-import { Shop } from './Pages/Shop';
+import Shop from './Pages/Shop';
 import Home from './Pages/Home'; // Import Home component
 import cpu_banner from './Components/Assets/bannercpu.jpg';
 import gpu_banner from './Components/Assets/bannergpu1.webp';
