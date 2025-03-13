@@ -4,12 +4,23 @@
   box-sizing: border-box;
 }
 
-.vanta-background {
-  height: 100vh; /* Full viewport height */
-  width: 100%;
+.pfbg {
   position: relative;
-  overflow: hidden;
+  width: 100%;
+  height: 100vh; 
+  overflow: hidden; 
 }
+
+.pfbg img {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Moves the image behind other content */
+  margin-bottom: 60px;
+}
+
 
 /* Navbar */
 .navbar {

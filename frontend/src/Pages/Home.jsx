@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './Home.css';
 import pc from './Assets/pc.png';
 import gif1 from './Assets/gif1.webp';
-import np1 from './Assets/np1.webp';
+import pcbg from './Assets/pcbg.png';
 
 export class Home extends Component {
   render() {
@@ -10,6 +10,9 @@ export class Home extends Component {
       <div>
         {/* Background Section */}
         <div className="vanta-background">
+          <div className="pfbg">
+            <img src={pcbg}></img>
+          </div>
           {/* Navbar */}
           <nav className="navbar">
             <div className="logo">
