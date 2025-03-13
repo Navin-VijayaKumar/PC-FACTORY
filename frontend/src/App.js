@@ -6,10 +6,10 @@ import { Shopcat } from './Pages/Shopcat';
 import { Product } from './Pages/Product'; // Ensure this is defined
 import { Cart } from './Pages/Cart'; // Ensure this is defined
 import Shop from './Pages/Shop';
-import Home from './Pages/Home'; // Import Home component
-import cpu_banner from './Components/Assets/bannercpu.jpg';
-import gpu_banner from './Components/Assets/bannergpu1.webp';
-import { Desbox } from './Components/Desbox/Desbox';
+import cpu from './Components/Assets/cpu.png';
+import gpu from './Components/Assets/gpu.png';
+import About from './Pages/About';
+import Contact from './Pages/Contact';
 
 function App() {
     return (
@@ -18,8 +18,8 @@ function App() {
             <Routes>
                 <Route path='/shop' element={<Shop />} />
                 <Route path='/PreBuild' element={<Shopcat category="pre_build" />} />
-                <Route path='/CPU' element={<Shopcat banner={cpu_banner} category="cpu" />} />
-                <Route path='/GPU' element={<Shopcat banner={gpu_banner} category="gpu" />} />
+                <Route path='/CPU' element={<Shopcat banner={cpu} category="cpu" />} />
+                <Route path='/GPU' element={<Shopcat banner={gpu} category="gpu" />} />
                 <Route path='/MotherBoard' element={<Shopcat category="mother_board" />} />
                 <Route path='/Ram' element={<Shopcat category="ram" />} />
                 <Route path='/Storage' element={<Shopcat category="storage" />} />
@@ -27,6 +27,8 @@ function App() {
                 <Route path='/Case' element={<Shopcat category="case" />} />
                 <Route path='/product/:productId' element={<Product />} />
                 <Route path='/cart' element={<Cart />} />
+                <Route path='/about' element={<About></About>} />
+                <Route path='/contact' element={<Contact></Contact>} />
             </Routes>
         </>
     );

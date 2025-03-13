@@ -24,7 +24,7 @@
   }
   .imageslider{
     padding-bottom:200px;
-    padding-top: 140px;
+    padding-top: 40px;
     padding-right: 20px;
 background-color: white;
 }
@@ -42,7 +42,7 @@ background-color: white;
     display: flex;
     width: 100%; /* Make it fill the .carousel */
     transition: transform 0.5s ease-in-out;
-background-color: white;
+    background-image: linear-gradient(rgb(117, 117, 218),black);
 }
   
 .carousel-image {

@@ -1,0 +1,95 @@
+/* General Styling */
+.about-container {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background: #f4f4f4;
+    padding-bottom: 150px;
+    padding-top: 90px;
+  }
+  
+  /* Hero Section */
+  .about-hero {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .hero-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .hero-overlay {
+    
+    color: rgb(0, 0, 0);
+    padding: 20px 40px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .hero-overlay h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero-overlay p {
+    font-size: 1.2rem;
+  }
+  
+  /* Content Sections */
+  .about-content {
+    text-align: center;
+    padding: 50px 20px;
+    background: white;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+  }
+  
+  h2 {
+    color: #222;
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  p {
+    color: #555;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .highlight {
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  /* Call to Action */
+  .about-cta {
+    text-align: center;
+    padding: 50px 20px;
+    background: #007bff;
+    color: white;
+    border-radius: 10px;
+    margin-top: 30px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .explore-button {
+    background: white;
+    color: #007bff;
+    font-size: 1.2rem;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .explore-button:hover {
+    background: #f8f9fa;
+  }
+  

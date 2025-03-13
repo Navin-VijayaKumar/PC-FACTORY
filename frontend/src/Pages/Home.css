@@ -13,7 +13,7 @@
 
 .pfbg img {
   position: absolute;
-  top: 10%;
+  top: 0%;
   left: 0;
   width: 100%;
   height: 100%;
@@ -24,6 +24,7 @@
 
 /* Navbar */
 .navbar {
+  display: flex;
   position: absolute;
   top: 0;
   left: 0;
@@ -31,9 +32,8 @@
   z-index: 10;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: end;
   padding: 15px 50px;
-  background: rgba(104, 101, 101, 0.6); /* Semi-transparent */
 }
 
 .logo img {
@@ -63,7 +63,7 @@
 }
 
 .nav-links a {
-  color: aqua;
+  color: rgb(0, 0, 0);
   font-size: 26px;
   font-family: monospace;
   text-decoration: none;
@@ -71,7 +71,7 @@
 }
 
 .nav-links a:hover {
-  color: white;
+  color: rgb(20, 0, 122);
 }
 
 .homeProduct {

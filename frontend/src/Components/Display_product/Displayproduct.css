@@ -38,6 +38,7 @@
 
     color: rgb(0, 0, 0);
     font-size: 30px;
+    width: 300px;
     font-weight: 700;
     font-family: sans-serif	;
 
@@ -101,7 +102,6 @@
     background-color: rgb(161, 162, 57);
 }
 .display-product-main-img{
-    width: 800px;
-    object-fit: cover;
+    width: 900px;
     height: 600px;
 }

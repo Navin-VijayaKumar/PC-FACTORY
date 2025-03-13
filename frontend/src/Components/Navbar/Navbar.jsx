@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 import './Navbar.css';
 import cart from './Assets/cart.png';
+import pc from './Assets/pc.png'
 import { Link } from 'react-router-dom';
 import { Shopcontext } from '../../Context/Shopcontext';
 
@@ -9,9 +10,16 @@ export const Navbar = () => {
  const {getTotalcartitems}=useContext(Shopcontext);
   return (
     <div className='Navbar'>
+      <div className="logo">
+        <div className="logoimg">
+          <img src={pc} alt="" />
+        </div>
+        <div className="pctitle">
+          <h2>PC Factory</h2>
+        </div>
+      </div>
       <ul className='Navbar-items'>
-      <li onClick={() => setItems("shop")}><Link style={{textDecoration: 'none'}} to='/'>Return</Link>{items === "shop" ? <hr /> : null}</li>
-        <li onClick={() => setItems("PreBuild")}><Link  style={{textDecoration: 'none'}} to='/PreBuild'>Pre Build</Link>{items === "Pre Build" ? <hr /> : null}</li>
+      <li onClick={() => setItems("shop")}><Link style={{textDecoration: 'none'}} to='/'>Home</Link>{items === "shop" ? <hr /> : null}</li>
         <li onClick={() => setItems("CPU")}><Link  style={{textDecoration: 'none'}} to='/CPU'>CPU</Link>{items === "CPU" ? <hr /> : null}</li>
         <li onClick={() => setItems("GPU")}><Link  style={{textDecoration: 'none'}} to='/GPU'>GPU</Link>{items === "GPU" ? <hr /> : null}</li>
         <li onClick={() => setItems("MotherBoard")}><Link  style={{textDecoration: 'none'}} to='/MotherBoard'>Mother Board</Link>{items === "Mother Board" ? <hr /> : null}</li>
@@ -19,6 +27,7 @@ export const Navbar = () => {
         <li onClick={() => setItems("Storage")}><Link  style={{textDecoration: 'none'}} to='/Storage'>Storage</Link>{items === "Storage" ? <hr /> : null}</li>
         <li onClick={() => setItems("SMPS")}><Link  style={{textDecoration: 'none'}} to='/SMPS'>SMPS</Link>{items === "SMPS" ? <hr /> : null}</li>
         <li onClick={() => setItems("Case")}><Link  style={{textDecoration: 'none'}} to ='/Case'>Case</Link>{items === "Case" ? <hr /> : null}</li>
+        <li onClick={() => setItems("PreBuild")}><Link  style={{textDecoration: 'none'}} to='/PreBuild'>Pre Build</Link>{items === "Pre Build" ? <hr /> : null}</li>
       </ul>
       <div className='Navbar-cart'>
       <Link to='/Cart'>
