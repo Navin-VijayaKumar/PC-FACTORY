@@ -6,20 +6,20 @@ a {
 .item {
 
     width: 380px;
-    height: 530px;
+    height: 570px;
     margin: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     transition: transform 0.4s;
     background-color: rgb(234, 226, 226);
-    border: 1px solid black;
+    border: 3px solid black;
     
 
 }
 
   
 .item img {
-   width: 378px;
+   width: 375px;    
    padding-top: 0.2px;
    height: 350px;
    object-fit: cover;
@@ -27,7 +27,8 @@ a {
 
 .item p {
     margin: 10px 20px;
-    font-size: 20px;
+    color: #000;
+    font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
     
 }
@@ -36,6 +37,7 @@ a {
     display: flex;
     justify-content: space-between;
     padding: 20px 20px;
+    color: #000;
 }
 
 .price-new {

@@ -1,10 +1,12 @@
 import React from "react";
 import './About.css';
+import Timeline from "./Timeline";
 // import banner from "../Assets/pc-banner.jpg";
 
 const About = () => {
   return (
     <div className="about-container">
+      <Timeline></Timeline>
       {/* Hero Section */}
       <div className="about-hero">
         <div className="hero-overlay">
