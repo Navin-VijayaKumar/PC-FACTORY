@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Items.css";
 import { Link } from "react-router-dom";
-import Skeleton from "react-loading-skeleton";
-import "react-loading-skeleton/dist/skeleton.css";
 
 export const Items = (props) => {
   const [loading, setLoading] = useState(true);
@@ -11,8 +9,8 @@ export const Items = (props) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // Replace with your actual API URL
-        const response = await fetch(`https://your-api.com/product/${props.id}`);
+        // Fetch data from API (Replace with your actual API URL)
+        const response = await fetch(`https://pc-factory-backend.onrender.com/product/${props.id}`);
         const result = await response.json();
         setData(result);
       } catch (error) {
@@ -29,19 +27,16 @@ export const Items = (props) => {
     <div className="container1">
       <div className="item">
         {loading ? (
-          // **Show Skeleton Loader while fetching**
-          <div className="skeleton-wrapper">
-            <Skeleton width={"100%"} height={350} />
-            <Skeleton width={"60%"} height={30} style={{ margin: "10px 0" }} />
-            <div className="skeleton-price-container">
-              <Skeleton width={70} height={25} />
-              <Skeleton width={60} height={22} />
-            </div>
-          </div>
+          // **Show Spinner while loading**
+          <div className="loading-spinner"></div>
         ) : (
           // **Show Data after Fetching**
           <Link to={`/product/${props.id}`}>
-            <img onClick={() => window.scrollTo(0, 0)} src={data?.image || props.image} alt="Product" />
+            <img
+              onClick={() => window.scrollTo(0, 0)}
+              src={data?.image || props.image}
+              alt="Product"
+            />
             <div>
               <p>{data?.name || props.name}</p>
             </div>
