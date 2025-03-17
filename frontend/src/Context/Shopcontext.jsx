@@ -1,5 +1,4 @@
 import React, { createContext, useEffect, useState } from "react";
-import { Product } from "../Pages/Product";
 
 export const Shopcontext = createContext(null);
 

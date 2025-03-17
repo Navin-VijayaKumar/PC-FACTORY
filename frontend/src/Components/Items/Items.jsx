@@ -11,14 +11,14 @@ export const Items = (props) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // Simulate API call (replace with actual fetch)
+        // Replace with your actual API URL
         const response = await fetch(`https://your-api.com/product/${props.id}`);
         const result = await response.json();
         setData(result);
       } catch (error) {
         console.error("Error fetching data:", error);
       } finally {
-        setLoading(false); // Only stop loading once data is fetched
+        setLoading(false); // Stop loading once data is fetched
       }
     };
 
@@ -41,11 +41,7 @@ export const Items = (props) => {
         ) : (
           // **Show Data after Fetching**
           <Link to={`/product/${props.id}`}>
-            <img
-              onClick={() => window.scrollTo(0, 0)}
-              src={data?.image || props.image}
-              alt="Product"
-            />
+            <img onClick={() => window.scrollTo(0, 0)} src={data?.image || props.image} alt="Product" />
             <div>
               <p>{data?.name || props.name}</p>
             </div>
